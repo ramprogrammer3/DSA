@@ -17,6 +17,6 @@ public class Constructor {
 
     public static void main(String[] args) {
         // System.out.println("Hello world");
-        Constructor test = new Constructor();
+        // Constructor test = new Constructor();
     }
 }

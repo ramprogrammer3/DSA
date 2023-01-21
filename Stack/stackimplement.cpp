@@ -4,13 +4,11 @@ using namespace std;
 class Stack
 {
 
-    // properties
 public:
     int *arr;
     int top;
     int size;
 
-    // behavior
     Stack(int size)
     {
         this->size = size;
@@ -20,7 +18,7 @@ public:
 
     void push(int element)
     {
-
+        
         if (size - top > 1)
         {
             top++;
@@ -28,9 +26,10 @@ public:
         }
         else
         {
-            cout << "Stack OverFlow " << endl;
+            cout << "stack overflow " << endl;
         }
     }
+
     void pop()
     {
 
@@ -40,24 +39,27 @@ public:
         }
         else
         {
-            cout << "Stack underFlwo " << endl;
+            cout << "Stack underFlow " << endl;
         }
     }
 
     int peak()
     {
+
         if (top >= 0)
         {
             return arr[top];
         }
         else
         {
-            cout << "Stack is empty " << endl;
+            cout << "stack is empty " << endl;
             return -1;
         }
     }
 
-    bool isEmpty()
+    
+
+    bool empty()
     {
         if (top == -1)
         {
@@ -73,28 +75,17 @@ public:
 int main()
 {
 
-    Stack st(5);
+    Stack s(5);
 
-    // st.push(22);
-    // st.push(23);
-    // st.push(24);
-    // st.push(22);
-    // st.push(23);
-    // st.push(24);
+    s.push(6);
+    s.push(7);
+    s.push(8);
+    s.pop();
+    s.pop();
+    s.pop();
 
-    // cout << st.peak() << endl;
-    // st.pop();
-    // cout << st.peak() << endl;
-    // st.pop();
-    // cout << st.peak() << endl;
-    // st.pop();
-    // cout << st.peak() << endl;
+    cout << "Top element of stack is " << s.peak() << endl;
 
-    if(st.isEmpty()){
-        cout << "Stack is empty " << endl;
-    }else{
-        cout << "Stack is not empty " << endl;
-    }
 
     return 0;
 }

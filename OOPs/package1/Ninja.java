@@ -14,7 +14,7 @@ public class Ninja {
     public static void main(String[] args) {
         System.out.println("Hello world");
 
-        Ninja geek3 = new Ninja("ram");
-        Ninja geek2 = new Ninja("ram", 10);
+        // Ninja geek3 = new Ninja("ram");
+        // Ninja geek2 = new Ninja("ram", 10);
     }
 }
