@@ -1,4 +1,4 @@
-public class Car extends Vehicle {
+public abstract class Car extends Vehicle {
     
     int numDoors;
     int numGears;

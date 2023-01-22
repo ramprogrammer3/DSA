@@ -1,7 +1,7 @@
 /**
  * Vehicle
  */
-public  class Vehicle {
+public abstract class Vehicle {
 
     private String color;
     int maxSpeed;
@@ -28,7 +28,7 @@ public  class Vehicle {
         System.out.println("Vehicle color " + color + " MaxSpeed " + maxSpeed);
     }
 
-    // public abstract boolean isMotorized();
+    public abstract boolean isMotorized();
 
     public static void main(String[] args) {
         System.out.println("Hello world ");
