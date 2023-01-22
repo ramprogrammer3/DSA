@@ -1,29 +1,29 @@
 
-public class Pair{
+public class Pair<T>{
     
-    private int first;
-    private int second;
+    private T first;
+    private T second;
 
-    public Pair(int first, int second){
+    public Pair(T first, T second){
         // super();
         this.first = first;
         this.second = second;
     }
 
-    public int getFirst(){
+    public T getFirst(){
         return first;
     }
 
-    public void setFirst(int first){
+    public void setFirst(T first){
         this.first = first;
     }
 
 
-    public int getSecond(){
+    public T getSecond(){
         return second;
     }
 
-    public void setSecond(int second){
+    public void setSecond(T second){
         this.second = second;
     }
 
