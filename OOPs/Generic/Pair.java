@@ -1,10 +1,12 @@
 
-public class Pair<T>{
+public class Pair<T, S>{
     
     private T first;
-    private T second;
+    private S second;
 
-    public Pair(T first, T second){
+    Pair() {}
+
+    public Pair(T first, S second){
         // super();
         this.first = first;
         this.second = second;
@@ -19,11 +21,11 @@ public class Pair<T>{
     }
 
 
-    public T getSecond(){
+    public S getSecond(){
         return second;
     }
 
-    public void setSecond(T second){
+    public void setSecond(S second){
         this.second = second;
     }
 
