@@ -17,11 +17,25 @@ public class ArrayListDemo {
         arr.add(12);
         arr.add(35);
         arr.add(20);
+        // arr.remove(2);
+
+        // Integer j = 10;
+        // arr.remove(j);
+
+        arr.set(0, 100);
 
         System.out.println(arr.size());
+
         System.out.println(arr.get(2));
-        for(int i = 0; i<arr.size(); i++){
-            System.out.print(arr.get(i) + " ");
+
+        // for(int i = 0; i<arr.size(); i++){
+        //     System.out.print(arr.get(i) + " ");
+        // }
+
+
+        // this is called ranged loop in cpp
+        for(int i : arr){
+            System.out.print(i + " ");
         }
 
     }
