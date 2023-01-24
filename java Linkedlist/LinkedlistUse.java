@@ -12,7 +12,6 @@ public class LinkedlistUse {
         Node<Integer> n1 = new Node<Integer>(data);
         temp.next = n1;
         head = n1;
-
         // return n1;
     }
 
@@ -20,7 +19,7 @@ public class LinkedlistUse {
 
         Node<Integer> temp = head;
 
-        while(temp.next != null){
+        while(temp != null){
             System.out.print(temp.data + " ");
             temp = temp.next;
         }
@@ -29,21 +28,26 @@ public class LinkedlistUse {
     
 
     public static void main(String[] args) {
+
+        Node<Integer> node1 = new Node<Integer>(10);
+        Node<Integer> node2 = new Node<Integer>(20);
+        node2.next = node1;
+        printLinkedList(node2);
         
-        Node<Integer> n1 = new Node<Integer>(10);
-        Node<Integer> head = n1;
-        CreateLinkedList(head, 20);
-        CreateLinkedList(head, 30);
-        CreateLinkedList(head, 40);
+        // Node<Integer> n1 = new Node<Integer>(10);
+        // Node<Integer> head = n1;
+        // CreateLinkedList(head, 20);
+        // CreateLinkedList(head, 30);
+        // CreateLinkedList(head, 40);
 
         // int head = n1;
 
         // System.out.println(head);
 
-        System.out.println(n1.data);
+        // System.out.println(n1.data);
         // System.out.println(n1.next);
         // System.out.println(n1);
 
-        printLinkedList(head);
+        // printLinkedList(head);
     }
 }
