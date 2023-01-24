@@ -29,10 +29,10 @@ public class LinkedlistUse {
 
     public static void main(String[] args) {
 
-        Node<Integer> node1 = new Node<Integer>(10);
-        Node<Integer> node2 = new Node<Integer>(20);
-        node2.next = node1;
-        printLinkedList(node2);
+        // Node<Integer> node1 = new Node<Integer>(10);
+        // Node<Integer> node2 = new Node<Integer>(20);
+        // node2.next = node1;
+        // printLinkedList(node2);
         
         // Node<Integer> n1 = new Node<Integer>(10);
         // Node<Integer> head = n1;
