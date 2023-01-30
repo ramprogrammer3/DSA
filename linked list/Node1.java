@@ -33,7 +33,6 @@ public class Node1<T> {
 
         node1.next = node2;
         increment(node1);
-
         print(node1);
 
     }
